@@ -1,18 +1,19 @@
-const title = <h1>My First React Element!</h1>
+const title = 'My First React Element!';
 
+const desc = 'I just learned how to create a react node and render it to the DOM';
 
-const desc = React.createElement(
-    'p',
-    null,
-    'I just learned how to create a React node and render it into the DOM'
-);
+const myTitleID = 'main-title';
+const name = 'Guil';
+//{} the Curly braces let JSX know you are writing JavaScript wooo
+// className is actually JSX's version of CSS's
+const header = (
+    <header>
+        <h1 id={myTitleID}>{ name }'s First React Element!</h1>
+        <p className={}>{desc}</p>
+        <input value={10 * 20}/>
+    </header>
+)
 
-const header = React.createElement(
-    'header',
-    null,
-    title,
-    desc
-);
 
 //render html element
 ReactDOM.render(
