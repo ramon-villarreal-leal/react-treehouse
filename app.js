@@ -1,4 +1,4 @@
-const title =React.createElement(
+const title = React.createElement(
     //type of element you want to create
     //not a real h1 element its an object that describes a dom node
     'h1',
