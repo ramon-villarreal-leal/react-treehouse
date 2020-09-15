@@ -1,11 +1,23 @@
-const title = React.createElement(
-    //type of element you want to create
-    //not a real h1 element its an object that describes a dom node
-    'h1',
-    // second argument is an object
-    {id: 'main-title', title: 'This is a title'},
-    // 3rd argument passed through is the content or children you are creating
-    'My first React element!'
+const title = <h1>My First React Element!</h1>
+
+
+const desc = React.createElement(
+    'p',
+    null,
+    'I just learned how to create a React node and render it into the DOM'
+);
+
+const header = React.createElement(
+    'header',
+    null,
+    title,
+    desc
+);
+
+//render html element
+ReactDOM.render(
+    header,
+    document.getElementById('root')
 );
 
 console.log(title);
