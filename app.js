@@ -14,6 +14,16 @@ const header = (
     </header>
 )
 
+//function header, uppercase like Java
+function Header() {
+    return (
+        <header>
+            <h1>Scoreboard</h1>
+            <span className="stats">Players: 1</span>
+        </header>
+    );
+}
+
 
 //render html element
 ReactDOM.render(
