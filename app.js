@@ -6,16 +6,16 @@ const myTitleID = 'main-title';
 const name = 'Guil';
 //{} the Curly braces let JSX know you are writing JavaScript wooo
 // className is actually JSX's version of CSS's
-const header = (
-    <header>
-        <h1 id={myTitleID}>{ name }'s First React Element!</h1>
-        <p className={}>{desc}</p>
-        <input value={10 * 20}/>
-    </header>
-)
+// const header = (
+//     <header>
+//         <h1 id={myTitleID}>{ name }'s First React Element!</h1>
+//         <p className={}>{desc}</p>
+//         <input value={10 * 20}/>
+//     </header>
+// )
 
 //function header, uppercase like Java
-function Header() {
+const Header = () => {
     return (
         <header>
             <h1>Scoreboard</h1>
@@ -24,10 +24,23 @@ function Header() {
     );
 }
 
+const Player = () => {
+    return (
+        <div className="player">
+            <span className="player-name">
+                Guil
+            </span>
+            <div className="counter">
+                <button className="counter-action decrement"> - </button>
+                <button className="counter-action increment"> + </button>
+            </div>
+        </div>
+    );
+}
 
 //render html element
 ReactDOM.render(
-    header,
+    <Header />,
     document.getElementById('root')
 );
 
