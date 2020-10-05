@@ -7,11 +7,22 @@ function Person(props) {
     );
 }
 
-ReactDOM.render(<Person name="Ramon" age="28" />,
-    document.querySelector('#p1'));
+// ReactDOM.render(<Person name="Ramon" age="28" />,
+//     document.querySelector('#p1'));
 
-ReactDOM.render(<Person name="Laura" age="26" />,
-    document.querySelector('#p2'));
+var app = (
+    <div>
+        <Person name="Ramon" age="28" />
+        <Person name="Laura" age="26" />
+    </div>
+);
 
-ReactDOM.render(<Person name="Laura" age="26" />,
-    document.querySelector('#p2'));
+ReactDOM.render(app,
+    document.querySelector('#app'));
+
+// ReactDOM.render(<Person name="Laura" age="26" />,
+//     document.querySelector('#p2'));
+//
+// ReactDOM.render(<Person name="Laura" age="26" />,
+//     document.querySelector('#p2'));
+
